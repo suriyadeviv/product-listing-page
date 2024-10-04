@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="shopping" />
+    <meta name="description" content="Single page app for listing the products and viewing the information about it." />
+    <title>Product Listing Page</title>
+    <link rel="stylesheet" href="./styles/filter.css">
+    <link rel="stylesheet" href="./styles/productList.css">
+    <link rel="stylesheet" href="./styles/productModal.css">
+    <link rel="stylesheet" href="./styles/app.css">
+</head>
+
+<body>
+    <div class="nav-wrapper">
+        <!-- Navigation Menu -->
+        <button id="menu-toggle" class="menu-toggle">☰ Menu</button>
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header class="page-title">
+        <h1>Product Listing Page</h1>
+    </header>
+    <div class="container">
+        <div class="filter-by" id="filter-section"></div>
+        <div class="filter-toggle">
+            <button id="filter-btn">Filter By</button>
+        </div>
+        <div class="filter-modal" id="filter-modal"></div>
+        <div id="product-list-section"></div>
+
+        <!-- Modal Container -->
+        <div id="modal-container"></div>
+    </div>
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>

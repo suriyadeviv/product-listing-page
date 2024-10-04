@@ -1,0 +1,101 @@
+/* Modal styles */
+.modal-filter {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.filter-by {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 15px;
+}
+
+.filter-container {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    padding: 10px
+}
+
+.close-modal {
+    display: block;
+    margin: 10px auto;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.filter-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.clear-all {
+    background: none;             
+    border: none;                
+    color: rgb(37, 95, 139);                 
+    text-decoration: underline;   
+    cursor: pointer;            
+    padding: 10px;                 
+    font: inherit;
+    font-size: 14px;
+}
+
+.filter-section label {
+    display: block;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+.filter-toggle {
+    display: block;
+}
+
+.filter-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #007BFF;
+
+    border-radius: 5px;
+    background-color: #007BFF;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: white;
+    position: relative;
+}
+
+.filter-tag span {
+    margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .modal-filter {
+        display: block;
+        width: 80%;
+        padding-left: 10px
+    }
+}
