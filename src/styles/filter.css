@@ -63,6 +63,12 @@
     text-transform: capitalize;
 }
 
+.price-section label {
+    display: block;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
 hr {
     border: 0;
     height: 2px;
@@ -78,7 +84,6 @@ hr {
     display: inline-block;
     padding: 5px 10px;
     border: 1px solid #007BFF;
-
     border-radius: 5px;
     background-color: #007BFF;
     margin-right: 5px;
@@ -90,12 +95,13 @@ hr {
 
 .filter-tag span {
     margin: 10px;
+    text-transform: capitalize;
 }
 
 @media screen and (max-width: 600px) {
     .modal-filter {
         display: block;
-        width: 80%;
+        width: 100%;
         padding-left: 10px
     }
 }

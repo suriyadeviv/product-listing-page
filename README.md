@@ -15,9 +15,9 @@ The functionalities included based on 3 endpoints - Desktop, Tablet and Mobile.
 
 ### Desktop and Tablet View functionalities
 1. Navigation Menu: A full-width navigation menu loads on the page.
-2. Filter Section: Displays available product categories. Checkboxes allow users to select categories.
-3. Category Selection: When a checkbox is ticked, the selected category appears with a close icon, updating the product list accordingly.
-4. Clear Selection: The close icon on a selected category clears that category and keeps the others available for filtering.
+2. Filter Section: Displays available product categories and price range. Checkboxes allow users to select filters.
+3. Filter Selection: When a checkbox is ticked, the selected category/price appears with a close icon, updating the product list accordingly.
+4. Clear Selection: The close icon on a selected filter clears that checkbox and keeps the others available for filtering.
 5. Clear All Button: Resets the filter selection and reloads the grid with all products. 
 6. Clickable Products: Each product in the grid is clickable, opening a modal with more information. For desktop view, the modal presents information in a horizontal stack using Flexbox, with the image on the left and product details on the right.
 7. Hardcoded Navigation Menu: Currently hardcoded for full width but can be evolved in the future with actual data.
@@ -31,6 +31,7 @@ The functionalities included based on 3 endpoints - Desktop, Tablet and Mobile.
 1. Modal Interaction: The modal closes when the close icon is clicked, when clicking outside the modal area, or when the escape key is pressed.
 2. Lazy Loading: Images below the fold utilize lazy loading, applied to images in three rows.
 3. Responsive Design: For screens smaller than 360px, a single product grid is displayed.
+4. Search products: Search text box is added to filter the products based on user search.
 
 ### Future Considerations
 These functionalities can be achieved based on data availability.

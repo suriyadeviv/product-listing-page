@@ -7,6 +7,8 @@ export function generateProductList(products) {
   products.forEach((product, index) => {
     const productItem = document.createElement('div');
     productItem.className = 'product-item';
+    productItem.tabIndex = 0; 
+    productItem.setAttribute('aria-label', product.title);
 
     const productImage = document.createElement('img');
     productImage.className = 'product-image'
@@ -34,6 +36,13 @@ export function generateProductList(products) {
 
     productItem.addEventListener('click', () => {
       document.getElementById('modal-container').appendChild(generateProductModal(product));
+    });
+
+    // Handle keyboard navigation
+    productItem.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        productItem.click(); // Simulate a click when Enter or Space is pressed
+      }
     });
 
     productList.appendChild(productItem);
